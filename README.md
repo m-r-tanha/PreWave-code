@@ -19,6 +19,8 @@ duplicate matches in that list.
 - ![ch1](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/ch1.png)
 - [x] It seems this code should not be capital or small letter sensitive, so at first all the characters are changed to lower case.
 
+# Python Code
+
 ```python
 import pandas as pd
 import numpy as np
@@ -75,6 +77,7 @@ Q1 = pd.crosstab(df["testAlerts_ID"],df['text'], rownames=['testAlerts_ID'], col
 Q2 = pd.crosstab(df["testAlerts_ID"],df['testQueryTerm_ID'], rownames=['testAlerts_ID'], colnames=["testQueryTerm_ID"])
 Q3 = pd.pivot_table(df, index=['testAlerts_ID','testQueryTerm_ID'], columns = 'text').replace([0.0, 1.0, np.nan],[u'\u2713', u'\u2713', '-'])
 ```
+### The results have been shown in different types, non-duplicate and duplicate term values in below:
 
 ![Q3](https://github.com/m-r-tanha/PreWave-code/blob/main/Q3.png)
 ![Q1](https://github.com/m-r-tanha/PreWave-code/blob/main/Q1.png)
