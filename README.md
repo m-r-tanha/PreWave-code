@@ -1,6 +1,12 @@
 # PreWave-code
 
 **This code challenge has been done with re, Pandas, NumPy, request, and JSON packages**
+#### Problem:
+Write a program which can query the data, given by the api for testAlerts, and determines in which alert a
+query term occurs. The query terms you can obtain from the testQueryTerm api.
+The final product is a list of the matches and needs to contain at least the alert id and the id of the extracted
+terms. The choice of the coding language and the data format of the output list is your choice. Do not write
+duplicate matches in that list.
 
 ## Considered Challenges
 - [x] The contents (text in Alert) might be empty -  It is considered
