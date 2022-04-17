@@ -1,4 +1,7 @@
 # PreWave-code
+
+*This challenges hasbeen done with re, pandas, numpy, request, and json packages*
+
 ## Considered Challenges
 - [x] The contents (text in Alert) might be empty
 - [x] the term might be as part of a combined word for example the term of ```ig metall``` is as a part of ```rechtswidrig metall``` which in this code it is not be considered.
