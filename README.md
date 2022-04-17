@@ -16,7 +16,7 @@ duplicate matches in that list.
 - [ ] If in term the ```keepOrder=True``` and ```text=IG Metall``` the ```IG-Metall``` is not picked as finding text (??)
 - [ ] It was not clear if the language in term should influence on the process?
 - [ ] It was not clear if a term should be extracted from a combined word like the below?
-- ![ch1](https://github.com/m-r-tanha/PreWave-code/blob/main/ch1.png)
+- ![ch1](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/ch1.png)
 - [x] It seems this code should not be capital or small letter sensitive, so at first all the characters are changed to lower case.
 
 ```python
