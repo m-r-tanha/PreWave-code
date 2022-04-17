@@ -3,8 +3,8 @@
 *This code challenges hasbeen done with re, pandas, numpy, request, and json packages*
 
 ## Considered Challenges
-- [x] The contents (text in Alert) might be empty
-- [x] the term might be as part of a combined word for example the term of ```ig metall``` is as a part of ```rechtswidrig metall``` which in this code it is not be considered.
+- [x] The contents (text in Alert) might be empty -  It is considered
+- [x] A term might be as part of a combined word in alert for example the term of ```ig metall``` is a part of ```rechtswidrig metall``` in a alert text it seems that it is totally different - it considered as non term in alert
 - [x]
 
 
