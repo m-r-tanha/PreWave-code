@@ -1,13 +1,13 @@
 # PreWave-code
 
-**This code challenges hasbeen done with re, pandas, numpy, request, and json packages**
+**This code challenge has been done with re, Pandas, NumPy, request, and JSON packages**
 
 ## Considered Challenges
 - [x] The contents (text in Alert) might be empty -  It is considered
-- [x] A term might be as part of a combined word in alert for example the term of ```ig metall``` is a part of ```rechtswidrig metall``` in a alert text it seems that it is totally different - it considered as non term in alert
+- [x] A term might be as part of a combined word in alert data for example the term of ```ig metall``` was a part of ```rechtswidrig metall``` in an alert text it seems that it is totally different - it considered as non term in alert
 - [x] An alert content might have two or more text - It is considerd in the code
-- [x] If in term the ```keepOrder=True``` and ```text=IG Metall``` the ```IG-Metall``` is not pick as finding text ??
-- [x] It seems this code should not be capital or small letter sensitive so at first all the characters are changed to lower case
+- [x] If in term the ```keepOrder=True``` and ```text=IG Metall``` the ```IG-Metall``` is not picked as finding text (??)
+- [x] It seems this code should not be capital or small letter sensitive so at first all the characters are changed to lower case.
 
 ```python
 import pandas as pd
@@ -16,6 +16,7 @@ import re
 import requests
 import json
 
+# loading data with REST APIs
 response_testQueryTerm = requests.get('''https://services.prewave.ai/adminInterface/api/testQueryTerm?
                                       key=mohammad:6f1622263ad73405987b4340e1f88e0f3df51af8c46cc64c2d4a31cff5e05d92''')
 testQueryTerm = response_testQueryTerm .json()
@@ -24,6 +25,7 @@ response_testAlerts = requests.get('''https://services.prewave.ai/adminInterface
                                    key=mohammad:6f1622263ad73405987b4340e1f88e0f3df51af8c46cc64c2d4a31cff5e05d92''')
 testAlerts = response_testAlerts.json()
 
+# Finding function if the word is in phrase
 def word_in(word, phrase):
     #print(word, "::::", phrase)
     word = word.lower() # to consider all type of word all charachter should be in lower
@@ -31,9 +33,11 @@ def word_in(word, phrase):
     return word in phrase
 
 df = pd.DataFrame()
+
+
 for term in testQueryTerm:
-    
-    if term['keepOrder']== True:
+
+     if term['keepOrder']== True: # if keepOrder = True
                 for alert in testAlerts:
                     if alert['contents'] != []:
                         for g in range(len(alert['contents'])):
@@ -43,7 +47,7 @@ for term in testQueryTerm:
 
                                     list = [[alert['id'], term['id'], term['text'], term['language'], term['keepOrder']]]
                                     df = df.append([pd.DataFrame(list)])
-    elif term['keepOrder']== False:
+    elif term['keepOrder']== False: # if keepOrder = False
             text_split = term['text'].split()
             for t in text_split:
                 for alert in testAlerts:
