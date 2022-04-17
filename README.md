@@ -1,5 +1,11 @@
 # PreWave-code
-## Challenges
+## Considered Challenges
+- The contents (text in Alert) might be empty
+- the term might be as part of a combined word for example the term is "ig metall" but it is as a part of rechtswird*ig metall* which not be considerd.
+- 
+
+
+
 - IG-Metall is in the list but based on asked solution in case of *keepOrder = True* we should find just this term without any changes lik "IG Metall" as it is in *testQueryTerm*
 - There are a consequent words like rechtswird*ig metall* and I don't know should I consider as "IG Metall" finding or not?
 - capital letter and small letters should be considred?
