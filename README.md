@@ -13,7 +13,7 @@ duplicate matches in that list.
 - [x] A term might be as part of a combined word in alert data for example the term of ```ig metall``` was a part of ```rechtswidrig metall``` in an alert text, it seems that it is totally different - it considered as non term in alert.
 - [x] An alert content might have two or more text items - It is considerd in the code (for example in below: )
 - ![content](https://github.com/m-r-tanha/PreWave-code/blob/main/two_texts.png)
-- [ ] If in term the ```keepOrder=True``` and ```text=IG Metall``` the ```IG-Metall``` is not picked as finding text (??)
+- [ ] If in term the ```keepOrder=True``` and ```text=IG Metall```, so the ```IG-Metall``` is not picked as finding text (??)
 - [ ] It was not clear if the language in term should influence on the process?
 - [ ] It was not clear if a term should be extracted from a combined word like the below?
 - ![ch1](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/ch1.png)
