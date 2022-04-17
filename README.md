@@ -12,7 +12,7 @@ duplicate matches in that list.
 - [x] The contents (text in Alert) might be empty -  It is considered
 - [x] A term might be as part of a combined word in alert data for example the term of ```ig metall``` was a part of ```rechtswidrig metall``` in an alert text, it seems that it is totally different - it considered as non term in alert.
 - [x] An alert content might have two or more text items - It is considerd in the code
-- ![content](https://github.com/m-r-tanha/PreWave-code/blob/main/two texts.png)
+- ![content](https://github.com/m-r-tanha/PreWave-code/blob/main/two_texts.png)
 - [x] If in term the ```keepOrder=True``` and ```text=IG Metall``` the ```IG-Metall``` is not picked as finding text (??)
 - [x] It seems this code should not be capital or small letter sensitive so at first all the characters are changed to lower case.
 
