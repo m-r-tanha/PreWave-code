@@ -61,7 +61,8 @@ df.columns =['testAlerts_ID', 'testQueryTerm_ID', 'text', 'language','keeporder'
 Q1 = pd.crosstab(df["testAlerts_ID"],df['text'], rownames=['testAlerts_ID'], colnames=["text"])
 
 Q2 = pd.crosstab(df["testAlerts_ID"],df['testQueryTerm_ID'], rownames=['testAlerts_ID'], colnames=["testQueryTerm_ID"])
-Q3 = pd.pivot_table(df, index=['testAlerts_ID','testQueryTerm_ID'], columns = 'text').replace([0.0, 1.0, np.nan],[u'\u2713', u'\u2713', '-'])
+Q3 = pd.pivot_table(df, index=['testAlerts_ID','testQueryTerm_ID'], columns = 'text').
+                        replace([0.0, 1.0, np.nan],[u'\u2713', u'\u2713', '-'])
 ```
 
 ![Q1](https://github.com/m-r-tanha/PreWave-code/blob/main/Q1.png)
