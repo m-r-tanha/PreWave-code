@@ -1,7 +1,7 @@
 # PreWave-code
 ## Considered Challenges
 - The contents (text in Alert) might be empty
-the term might be as part of a combined word for example the term of <mark style="background-color: #FFFF00">ig metall</mark> is as a part of rechtswidrig metall which in this code it is not be considered.
+the term might be as part of a combined word for example the term of ==ig metall== is as a part of rechtswidrig metall which in this code it is not be considered.
 - 
 
 
