@@ -1,6 +1,6 @@
 # PreWave-code
 
-**This code challenge has been done with re, Pandas, NumPy, request, and JSON packages**
+**This code challenge has been done with Python 3.7 and re, Pandas, NumPy, request, and JSON packages**
 #### Problem:
 Write a program which can query the data, given by the api for testAlerts, and determines in which alert a
 query term occurs. The query terms you can obtain from the testQueryTerm api.
