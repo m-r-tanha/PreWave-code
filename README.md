@@ -15,6 +15,12 @@ import numpy as np
 import re
 import requests
 import json
+
+response_testQueryTerm = requests.get("https://services.prewave.ai/adminInterface/api/testQueryTerm?          key=mohammad:6f1622263ad73405987b4340e1f88e0f3df51af8c46cc64c2d4a31cff5e05d92")
+testQueryTerm = response_testQueryTerm .json()
+response_testAlerts = requests.get("https://services.prewave.ai/adminInterface/api/testAlerts?key=mohammad:6f1622263ad73405987b4340e1f88e0f3df51af8c46cc64c2d4a31cff5e05d92")
+testAlerts = response_testAlerts.json()
+
 ```
 
 ![Q1](https://github.com/m-r-tanha/PreWave-code/blob/main/Q1.png)
