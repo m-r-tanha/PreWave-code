@@ -1,6 +1,6 @@
 # PreWave-code
 
-*This challenges hasbeen done with re, pandas, numpy, request, and json packages*
+*This code challenges hasbeen done with re, pandas, numpy, request, and json packages*
 
 ## Considered Challenges
 - [x] The contents (text in Alert) might be empty
